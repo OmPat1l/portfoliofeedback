@@ -11,6 +11,10 @@
     font-size: .6rem;
 }
 
+body {
+    background-image: url(./milad-fakurian-E8Ufcyxz514-unsplash.jpg);
+}
+
 .icon-mobile-nav {
     height: 4.8rem;
     width: 4.8rem;
@@ -37,13 +41,14 @@
 .cta {
     display: grid;
 
+
     grid-template-columns: 2fr 1fr;
 
-    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2.4rem 4.8rem rgba(255, 255, 255, 0.499);
     border-radius: 11px;
 
     background-image: linear-gradient(to right bottom,
-            #4c6ef5, #748ffc);
+            rgba(255, 255, 255, 0.615), rgba(116, 143, 252, 0.666));
     overflow: hidden;
 }
 
@@ -51,6 +56,12 @@
     padding: 4.8rem 6.4rem 6.4rem 6.4rem;
     color: #45260a;
 
+}
+
+@media(max-width:450px) {
+    .cta-text-box {
+        overflow: scroll;
+    }
 }
 
 .cta .heading-secondary {
@@ -68,10 +79,7 @@
 }
 
 .cta-img-box {
-    background-image: linear-gradient(to right bottom,
-            rgba(116, 143, 252, 0.356),
-            rgba(230, 125, 34, 0)),
-        url("../img/ambassodr1.jpg");
+    background-image: url("./BB.png");
     background-size: cover;
     background-position: center;
 }
@@ -644,8 +652,12 @@ strong {
     }
 
     .cta-img-box {
-        height: 32rem;
+        height: 27rem !important;
         grid-row: 1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* background-position:; */
+
     }
 }
 
