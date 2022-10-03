@@ -59,8 +59,11 @@ body {
 }
 
 @media(max-width:450px) {
-    .cta-text-box {
-        overflow: scroll;
+
+    .cta-text-box div,
+    textarea {
+
+        width: 60vw !important;
     }
 }
 
